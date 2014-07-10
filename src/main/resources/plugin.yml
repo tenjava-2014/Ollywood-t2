@@ -1,0 +1,3 @@
+name: Ollywood-t2
+main: com.tenjava.entries.Ollywood.t2.TenJava
+version: '${project.version}'
