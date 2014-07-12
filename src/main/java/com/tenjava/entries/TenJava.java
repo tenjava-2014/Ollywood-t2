@@ -17,6 +17,7 @@ public class TenJava extends JavaPlugin {
 	 * dev.bukkit.org: olllirules
 	 * Minecraft Username: ollirules
 	 * Skill level: Intermediate. Thanks to you Pogostick29 :)
+	 * I know its not much. But I was stumped on ideas.
 	 */
 	
 	public void onEnable() {
