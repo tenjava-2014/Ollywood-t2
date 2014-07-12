@@ -1,5 +1,10 @@
+####################################
+#         Find Ores Plugin         #
+#         By OllyWood              #
+####################################
+
 # The number below is the mount of time (in seconds) is the duration of the game.
-gameDuration: 10
+gameDuration: 120
 
 # What item the player recieves when the game starts.
 # Default is Iron Pickaxe
@@ -10,10 +15,14 @@ startItem: 257
 # IT WILL ONLY ACCEPT ITEM NUMBERS!!
 item: 15 
 # Please put the name if the item players are supposed to collect below!
-itemName: Iron ore
+itemName: Iron Ore
 
 # Whether the player keeps the items specified above after the game ends
 keepItems: true
 
 # Pretty self-explanatory. Whether the user keeps the start item when the gaem ends
 keepStartItem: false
+
+# The amount of start items you get at start
+# E.g. startItemAmount: 2 (You get 2 iron pickaxes/startItem)
+startItemAmount: 1
