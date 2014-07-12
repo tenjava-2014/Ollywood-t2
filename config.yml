@@ -1,2 +1,11 @@
 #The number below is the mount of time (in seconds) is the duration of the game.
 gameDuration: 10
+
+#Below is the item that players will have to find during the game!
+#Default is Iron Ore
+#IT WILL ONLY ACCEPT ITEM NUMBERS!!
+item: 15 
+#Please put the name if the item players are supposed to collect below!
+itemName: Iron ore
+
+keepItems: True
