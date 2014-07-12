@@ -29,12 +29,13 @@ public class TenJava extends JavaPlugin {
 		
 		if (!(sender instanceof Player)) {
 			sender.sendMessage(ChatColor.RED+"Console cannot create new game!");
+			return true;
 		}
 		
 		
 		final Player p = (Player) sender;
 		
-		if(cmd.getName().equalsIgnoreCase("new")) {
+		if(cmd.getName().equalsIgnoreCase("findores")) {
 			
 			//Config Variables
 			int gameDuration = getConfig().getInt("gameDuration");
@@ -44,17 +45,18 @@ public class TenJava extends JavaPlugin {
 			final boolean keepItems = getConfig().getBoolean("keepItems");
 			final int startItem = getConfig().getInt("startItem");
 			final boolean keepStartItem = getConfig().getBoolean("keepStartItem");
+			int startItemAmount = getConfig().getInt("startItemAmount");
 			//Config Variables
 			
 			/**
 			 * Start of main game
 			 */
 			
-			p.sendMessage(ChatColor.GREEN+"Timer started! You have "+gameDuration+" seconds to find as much "+itemName+" as you can!");
+			p.sendMessage(ChatColor.GREEN+"Timer started! You have "+gameDuration+" seconds to find as much "+ChatColor.AQUA+itemName+ChatColor.GREEN+" as you can!");
 			
 			p.getInventory().clear();
 			
-			p.getInventory().addItem(new ItemStack(startItem));
+			p.getInventory().addItem(new ItemStack(startItem, startItemAmount));
 			
 			Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(this, new Runnable() {
 				 
