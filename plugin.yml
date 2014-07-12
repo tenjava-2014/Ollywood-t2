@@ -4,5 +4,5 @@ main: com.tenjava.entries.TenJava
 author: ollirules
 
 commands:
-    findores:
+    finditems:
        usage: /<command>
