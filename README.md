@@ -2,7 +2,7 @@
 ==============================
 
 [![ten.java](https://cdn.mediacru.sh/hu4CJqRD7AiB.svg)](https://tenjava.com/)
-[duck](http://www.whateats.com/wp-content/uploads/2010/04/duck-jaroslav-novak.jpt_.jpg)]
+[[duck](http://www.whateats.com/wp-content/uploads/2010/04/duck-jaroslav-novak.jpt_.jpg)]
 
 This is a submission for the 2014 ten.java contest.
 
