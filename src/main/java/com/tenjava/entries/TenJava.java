@@ -12,7 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class TenJava extends JavaPlugin {
 	
 	public void onEnable() {
-		
+		saveDefaultConfig();
 	}
 	
 	@Override
@@ -25,6 +25,9 @@ public class TenJava extends JavaPlugin {
 		final Player p = (Player) sender;
 		
 		if(commandString.equalsIgnoreCase("new")) {
+			
+			int gameDuration = getConfig().getInt("gameDuration");
+			int gameTime = gameDuration*20;
 			
 			p.getInventory().clear();
 			
@@ -50,7 +53,7 @@ public class TenJava extends JavaPlugin {
 				    	  p.sendMessage(ChatColor.RED+"Bad luck! Try better next time!");
 				      }
 				  }
-				}, 200L);
+				}, gameTime);
 			
 		}
 		
