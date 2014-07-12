@@ -36,11 +36,15 @@ public class TenJava extends JavaPlugin {
 		
 		if(cmd.getName().equalsIgnoreCase("new")) {
 			
-			//Game duration set by user in config
+			//Config Variables
 			int gameDuration = getConfig().getInt("gameDuration");
 			int gameTime = gameDuration*20;
 			final int item = getConfig().getInt("item");
 			final String itemName = getConfig().getString("itemName");
+			final boolean keepItems = getConfig().getBoolean("keepItems");
+			final int startItem = getConfig().getInt("startItem");
+			final boolean keepStartItem = getConfig().getBoolean("keepStartItem");
+			//Config Variables
 			
 			/**
 			 * Start of main game
@@ -50,7 +54,7 @@ public class TenJava extends JavaPlugin {
 			
 			p.getInventory().clear();
 			
-			p.getInventory().addItem(new ItemStack(Material.DIAMOND_PICKAXE));
+			p.getInventory().addItem(new ItemStack(startItem));
 			
 			Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(this, new Runnable() {
 				 
@@ -61,24 +65,36 @@ public class TenJava extends JavaPlugin {
 				    	  ItemStack[] inv = p.getInventory().getContents();
                           
 				    	  	//Checks the amount of diamonds in players inventory
-				    	    int cuantity= 0;
+				    	    int quantity= 0;
 				    	    for(int i = 0; i < inv.length; i++) {
 				    	        if(inv[i] != null){
 				    	            if(inv[i].getTypeId() == item) {
 				    	                int cant = inv[i].getAmount();
-				    	                cuantity= cuantity + cant;
+				    	                quantity= quantity + cant;
 				    	            }
 				    	        }
 				    	    }
 				    	  
-				    	  p.sendMessage(ChatColor.GOLD+"Well done! You found "+cuantity+" "+itemName+"!!");
+				    	  p.sendMessage(ChatColor.GOLD+"Well done! You found "+quantity+" "+itemName+"!!");
+				    	  if (keepItems == false) {
+				    		  p.getInventory().remove(item);
+				    	  }
+				    	  if (keepStartItem == false) {
+				    		  p.getInventory().remove(startItem);
+				    	  }
 				      } else {
 				    	  //Displays message is timmer ends and you have no diamonds in your inventory
 				    	  p.sendMessage(ChatColor.RED+"Bad luck! Try better next time!");
+				    	  if (keepStartItem == false) {
+				    		  p.getInventory().remove(startItem);
+				    	  }
 				      }
 				  }
 				}, gameTime);
 			
+			/*
+			 * End of Main Game
+			 */
 		}
 		
 		
