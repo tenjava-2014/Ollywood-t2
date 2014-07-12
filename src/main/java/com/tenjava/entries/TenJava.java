@@ -36,7 +36,7 @@ public class TenJava extends JavaPlugin {
 		
 		final Player p = (Player) sender;
 		
-		if(cmd.getName().equalsIgnoreCase("findores")) {
+		if(cmd.getName().equalsIgnoreCase("finditems")) {
 			
 			//Config Variables
 			int gameDuration = getConfig().getInt("gameDuration");
