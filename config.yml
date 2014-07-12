@@ -14,7 +14,7 @@ startItem: 257
 # Default is Iron Ore
 # IT WILL ONLY ACCEPT ITEM NUMBERS!!
 item: 15 
-# Please put the name if the item players are supposed to collect below!
+# Please put the name of the item players are supposed to collect below!
 itemName: Iron Ore
 
 # Whether the player keeps the items specified above after the game ends
