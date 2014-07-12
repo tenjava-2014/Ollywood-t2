@@ -33,4 +33,8 @@ Usage
 This plugin will add a cool new mini-game to Minecraft thats focused on user configuration!.
 When using the command /finditems, it will start a timer (specified time in config.yml) in which you have to find/mine as many items (configured in config.yml) in a certain amount of time (time in config.yml).
 
+This plugin can be used as a fun little mini-game to play with your friends and see who can get the most items or can be used on a proper server to add a difference to boring monotonous mining. It can also be used as a "boost" for mining on servers.
+
+
+
 
