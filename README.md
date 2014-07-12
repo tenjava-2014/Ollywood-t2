@@ -35,6 +35,12 @@ When using the command /finditems, it will start a timer (specified time in conf
 
 This plugin can be used as a fun little mini-game to play with your friends and see who can get the most items or can be used on a proper server to add a difference to boring monotonous mining. It can also be used as a "boost" for mining on servers.
 
+--------------------------------------------
+Things I Forgot
+---------------
+
+1. Permissions
+2. Cooldown betwwen starting games
 
 
 
