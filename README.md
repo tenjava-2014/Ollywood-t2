@@ -2,6 +2,7 @@
 ==============================
 
 [![ten.java](https://cdn.mediacru.sh/hu4CJqRD7AiB.svg)](https://tenjava.com/)
+[![ten.java](http://www.whateats.com/wp-content/uploads/2010/04/duck-jaroslav-novak.jpt_.jpg)]
 
 This is a submission for the 2014 ten.java contest.
 
@@ -19,7 +20,7 @@ Compilation
 - Clone the repository: `git clone https://github.com/tenjava/Ollywood-t2`
 - Compile and create the plugin package using Maven: `mvn`
 
-Maven will download all required dependencies and build a ready-for-use plugin package!
+Maven will download all required dependencies and build a ready-for-use plugin package! I think!
 
 ---------------------------------------
 
