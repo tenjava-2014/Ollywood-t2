@@ -30,3 +30,7 @@ Usage
 1. Install plugin
 2. Do things with it
 
+This plugin will add a cool new mini-game to Minecraft thats focused on user configuration!.
+When using the command /findores, it will start a timer (specified time in config.yml) in which you have to find/mine as many items (configured in config.yml) in a certain amount of time (time in config.yml).
+
+
